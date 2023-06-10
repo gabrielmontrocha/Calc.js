@@ -14,27 +14,7 @@ export function handleClear(ev) {
 
 export function handleTyping(ev) {
   ev.preventDefault();
-  const allowedKeys = [
-    "(",
-    ")",
-    "/",
-    "*",
-    "-",
-    "+",
-    "9",
-    "8",
-    "7",
-    "6",
-    "5",
-    "4",
-    "3",
-    "2",
-    "1",
-    "0",
-    ".",
-    "%",
-    " ",
-  ];
+  const allowedKeys = ["(", ")", "/", "*", "-", "+", "9", "8", "7", "6", "5", "4", "3", "2", "1", "0", ".", "%", " ",];
   if (allowedKeys.includes(ev.key)) {
     input.value += ev.key;
     return;
